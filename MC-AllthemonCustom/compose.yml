@@ -14,7 +14,7 @@ services:
       - VERSION=1.21.1
       - MODRINTH_ALLOWED_VERSION_TYPE=release
       - MODS=cobblemon,create,sophisticated-backpacks,distanthorizons,c2me-neoforge
-      - DATAPACKS=allthemons
+      - DATAPACKS=https://cdn.modrinth.com/data/JV5dvqVX/versions/RKwM7Mkr/AllTheMons%20%5BR3.4%5D.zip
       - MEMORY=8G
       - MAX_MEMORY=28G
       - VIEW_DISTANCE=12
