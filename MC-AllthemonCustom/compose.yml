@@ -10,11 +10,10 @@ services:
       - /home/core/compose-files/minecraft/data:/data:Z
     environment:
       - EULA=TRUE
-      - TYPE=MODRINTH
-      - VERSION=RELEASE
-      - LOADER=NEOFORGE
+      - TYPE=NEOFORGE
+      - VERSION=1.21.1
       - MODRINTH_ALLOWED_VERSION_TYPE=release
-      - MODRINTH_MODPACK=MdwFAVRL
+      - MODRINTH_ADDITIONAL_MODS=MdwFAVRL
       - DATAPACKS=JV5dvqVX
       - MEMORY=8G
       - MAX_MEMORY=28G
