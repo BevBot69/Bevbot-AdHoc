@@ -13,7 +13,7 @@ services:
       - TYPE=MODRINTH
       - VERSION=RELEASE
       - MODRINTH_ALLOWED_VERSION_TYPE=release
-      - MODRINTH_MODS=MdwFAVRL,TyCTlI4b,uCdwusMi,LNytGWDc,COlSi5iR
+      - MODRINTH_MODPACK=MdwFAVRL,TyCTlI4b,uCdwusMi,LNytGWDc,COlSi5iR
       - DATAPACKS=JV5dvqVX
       - MEMORY=8G
       - MAX_MEMORY=28G
