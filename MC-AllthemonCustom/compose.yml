@@ -12,6 +12,7 @@ services:
       - EULA=TRUE
       - TYPE=MODRINTH
       - VERSION=RELEASE
+      - LOADER=NEOFORGE
       - MODRINTH_ALLOWED_VERSION_TYPE=release
       - MODRINTH_MODPACK=MdwFAVRL
       - DATAPACKS=JV5dvqVX
