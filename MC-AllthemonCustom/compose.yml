@@ -1,0 +1,25 @@
+---
+services:
+  minecraft:
+    image: docker.io/itzg/minecraft-server:latest
+    container_name: minecraft
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    volumes:
+      - /home/core/compose-files/minecraft/data:/data:Z
+    environment:
+      - EULA=TRUE
+      - TYPE=NEOFORGE
+      - VERSION=1.21.1
+      - MODRINTH_ALLOWED_VERSION_TYPE=release
+      - MODS=cobblemon,create,sophisticated-backpacks,distanthorizons,c2me-neoforge
+      - DATAPACKS=allthemons
+      - MEMORY=8G
+      - MAX_MEMORY=28G
+      - VIEW_DISTANCE=12
+      - SIMULATION_DISTANCE=12
+      - ONLINE_MODE=FALSE
+      - DIFFICULTY=normal
+      - OPS=${MC_OPS}
+      - JVM_OPTS=-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1
